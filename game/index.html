@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Emberfall — a little ember spirit against the night</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        background: #0b1026;
+      }
+      body {
+        display: grid;
+        place-items: center;
+        font-family: system-ui, sans-serif;
+      }
+      main {
+        padding: 12px;
+      }
+      canvas {
+        display: block;
+        border-radius: 10px;
+        box-shadow: 0 0 60px rgba(255, 122, 60, 0.25);
+      }
+      #status {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <canvas id="game" width="960" height="600" aria-label="Emberfall game"></canvas>
+      <p id="status" role="status" aria-live="polite"></p>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
