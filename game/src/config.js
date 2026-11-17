@@ -28,7 +28,7 @@ export const LIVES = 3;
 // they stop. COMBO.window is how long the chain stays alive between pickups.
 export const SHARD = {
   radius: 9,
-  points: 10,
+  points: 20,
   interval: 1.15,
   intervalJitter: 0.7,
   maxAlive: 7,
